@@ -11,6 +11,7 @@
 
 //CMPS
 @import './cmps/top-bar';
+@import './cmps/main-nav';
 
 .main-app {
 	height: 100vh;
@@ -24,8 +25,7 @@
 }
 
 .main-nav {
-	background-color: $background-solid;
-	grid-area: 'nav-bar';
+	// grid-area: 'nav-bar';
 }
 
 .top-bar {

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+//SVG
 import { ReactComponent as RigthArrow } from '../assets/icons/right-arrow.svg'
 import { ReactComponent as LeftArrow } from '../assets/icons/left-arrow.svg'
 import { ReactComponent as DownArrow } from '../assets/icons/down-arrow.svg'
@@ -18,6 +19,7 @@ export class TopBar extends Component {
 							<RigthArrow />
 						</button>
 					</div>
+
 					<button className="user-manu-container flex flex-center">
 						<div className="user-svg-container flex flex-center">
 							<User className="user-svg" />
