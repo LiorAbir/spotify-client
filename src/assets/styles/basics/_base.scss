@@ -9,6 +9,7 @@
 html {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	color: $text-base;
 }
 
 body {
@@ -42,4 +43,9 @@ a {
 input {
 	border: none;
 	background-color: inherit;
+}
+
+button {
+	border: none;
+	cursor: pointer;
 }

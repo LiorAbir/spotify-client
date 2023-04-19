@@ -1,14 +1,48 @@
-//BASICS
-@import './basics/base';
-@import './basics/helpers';
-@import './basics/layout';
-
 //SETUP
 @import './setup/functions';
 @import './setup/mixins';
 @import './setup/typography';
 @import './setup/variables';
 
+//BASICS
+@import './basics/base';
+@import './basics/helpers';
+@import './basics/layout';
+
 //CMPS
+@import './cmps/top-bar';
+
+.main-app {
+	height: 100vh;
+	background-color: $background-base;
+	grid-template-areas:
+		'top-bar         top-bar         top-bar'
+		'nav-bar         main-view       right-sidebar'
+		'playing-bar playing-bar playing-bar';
+	grid-template-columns: auto 1fr;
+	grid-template-rows: auto 1fr auto;
+}
+
+.main-nav {
+	background-color: $background-solid;
+	grid-area: 'nav-bar';
+}
+
+.top-bar {
+}
+
+.playing-bar {
+	background-color: #181818;
+	grid-area: 'playing-bar';
+	border-top: 1px solid #282828;
+	width: 100%;
+	z-index: 5;
+	height: 90px;
+}
+
+.main-root {
+	background-color: lightsalmon;
+	grid-area: 'main-view/main-view/main-view/right-sidebar';
+}
 
 //VIEWS

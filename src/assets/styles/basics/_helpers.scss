@@ -82,6 +82,10 @@
 	}
 }
 
+.grid {
+	display: grid;
+}
+
 .clean-list {
 	list-style: none;
 	padding: 0;
@@ -94,4 +98,14 @@
 
 .site-block {
 	margin-bottom: rem(20px);
+}
+
+.flex-center {
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-space-bet {
+	justify-content: space-between;
+	align-items: center;
 }
