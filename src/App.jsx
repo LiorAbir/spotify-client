@@ -9,11 +9,11 @@ function App() {
 	return (
 		<Router>
 			<div className="App">
-				<div className="main-app">
+				<div className="main-app grid">
 					<TopBar />
 					<MainNav />
 					<PlayingBar />
-					<div className="main-root"> main root</div>
+					<div className="main-root"></div>
 				</div>
 			</div>
 		</Router>

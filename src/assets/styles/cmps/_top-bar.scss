@@ -1,5 +1,6 @@
 .top-bar {
-	background-color: lightgray;
+	grid-area: main-view;
+	position: sticky;
 	padding: 16px 32px;
 
 	.top-bar-menu {

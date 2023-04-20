@@ -12,6 +12,7 @@
 //CMPS
 @import './cmps/top-bar';
 @import './cmps/main-nav';
+@import './cmps/playing-bar';
 
 .main-app {
 	height: 100vh;
@@ -24,25 +25,9 @@
 	grid-template-rows: auto 1fr auto;
 }
 
-.main-nav {
-	// grid-area: 'nav-bar';
-}
-
-.top-bar {
-}
-
-.playing-bar {
-	background-color: #181818;
-	grid-area: 'playing-bar';
-	border-top: 1px solid #282828;
-	width: 100%;
-	z-index: 5;
-	height: 90px;
-}
-
 .main-root {
-	background-color: lightsalmon;
-	grid-area: 'main-view/main-view/main-view/right-sidebar';
+	// background-color: lightsalmon;
+	grid-area: main-view/main-view/main-view/right-sidebar;
 }
 
 //VIEWS

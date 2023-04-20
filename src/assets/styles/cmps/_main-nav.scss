@@ -1,8 +1,16 @@
 .main-nav {
+	grid-area: nav-bar;
 	background-color: $background-solid;
-	padding-top: 24px;
+	justify-content: space-between;
+	position: relative;
+	transition: 0.2s;
+
+	span {
+		// text-overflow:
+	}
 
 	.main-nav-container {
+		padding-top: 24px;
 		flex-direction: column;
 
 		.logo {
@@ -73,6 +81,23 @@
 			.playlist-item {
 				height: 30px;
 			}
+		}
+	}
+
+	.layout-resizer {
+		cursor: col-resize;
+		// background-color: lightblue;
+		background: linear-gradient(hsla(0, 0%, 100%, 0.3), hsla(0, 0%, 100%, 0.3))
+			no-repeat 50%/1px 100%;
+		position: absolute;
+		height: 100%;
+		// inset-inline-end: -4.5px;
+		right: -4.5px;
+		width: 9px;
+
+		label {
+			// background-color: lightcoral;
+			// height: 100%;
 		}
 	}
 }
